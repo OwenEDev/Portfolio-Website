@@ -19,7 +19,6 @@ body{
     color: #FF5E5B;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 50px;
-    margin: auto;
     text-align: center;
 
     overflow: hidden;
@@ -31,21 +30,9 @@ body{
     cursor-flash .9s step-end infinite;
 }
 
-
-@keyframes typing{
-    from {width: 0;}
-    to {width: 100%;}
-}
-
-@keyframes cursor-flash {
-from, to {border-color: transparent;}
-50% {border-color: #FF5E5B;}
-}
-
 .intro_image {
     padding-top: 100px;
 }
-
 
 .me_img {
     display: block;
@@ -54,6 +41,11 @@ from, to {border-color: transparent;}
     margin-right: auto;
     width: 400px;
     height: 400px;
+
+    overflow: hidden;
+
+    animation: img_fade 1.5s ease-out .7s 1 normal both,
+    img_transform 1.5s ease-out .7s;
 
 }
 
@@ -69,6 +61,7 @@ from, to {border-color: transparent;}
     cursor: pointer;
     text-align: center;
     border: none;
+    animation: img_fade 1.5s ease-out 1.9s normal both
     
 }
 
@@ -81,4 +74,32 @@ from, to {border-color: transparent;}
     transform: translateY(4px);
     box-shadow: none;
 }
+
+
+@keyframes typing{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes cursor-flash {
+from, to {border-color: transparent;}
+50% {border-color: #FF5E5B;}
+}
+
+@keyframes img_fade {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes img_transform {
+    from {transform: scale(.1) rotate(0deg);}
+    to {transform: scale(1.0) rotate(360deg);}
+}
+
+
+
+
+
+
+
 
