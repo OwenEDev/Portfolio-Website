@@ -14,3 +14,80 @@ p {
     color: #FFFFEA;
     text-align: center;
 }
+
+.container {
+    padding: 20px;
+    width: 1100px;
+    height: 700px;
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.block_1 {
+    border: 3px solid #FF5E5B;
+    background-color: #FF5E5B;
+    width: 300px;
+    height: 500px;
+    margin-top: 100px;
+    float: left;
+    border-radius: 50px;
+}
+
+.block_1:hover {
+    transform: scale(1.01);
+}
+
+img {
+    display: block;
+    width: 270px;
+    height: 470px;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.block_2 {
+    border: 3px solid #FF5E5B;
+    background-color: #FF5E5B;
+    width: 765px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 50px;
+}
+
+.block_2:hover {
+    transform: scale(1.01);
+}
+
+button {
+    background-color: #FF5E5B;
+    color: #FFFFEA;
+    padding: 14px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    animation: img_fade 1.5s ease-out 1.9s normal both;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.button_div {
+    width: 140px;
+    height: 50px;
+    margin: auto;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px #D8D8D8;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
