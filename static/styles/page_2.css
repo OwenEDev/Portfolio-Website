@@ -45,6 +45,32 @@ p {
     margin-left: 75px;
 }
 
+.smalltxt {
+    font-size: 20px;
+}
+
+.infotxt {
+    font-size: 15px;
+    margin-top: 270px;
+}
+
+.icons {
+    padding: 5px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fab {
+    color: #FFFFEA;
+    font-size: 40px;
+    padding: 1px;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
 .block_2:hover {
     transform: scale(1.01);
 }
@@ -58,4 +84,56 @@ p {
     margin-left: 20px;
     float: left;
     border-radius: 50px;
+}
+
+.sub_block_container {
+    width: 645px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.sub_block {
+    border: 3px solid #FFFFEA;
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 10%;
+}
+
+.sub_block:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+button {
+    background-color: #FF5E5B;
+    color: #FFFFEA;
+    padding: 14px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    animation: img_fade 1.5s ease-out 1.9s normal both;
+    margin: auto;
+}
+
+.button_div {
+    width: 140px;
+    height: 50px;
+    margin: auto;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px #D8D8D8;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
