@@ -10,13 +10,13 @@ def Page():
 def page():
     return render_template("page_2.html")
 
-# @app.route("/your_shopping_list")
-# def page():
-#     return render_template()
+@app.route("/your_shopping_list")
+def shoppinglist_page():
+    return render_template("yourshoppinglist.html")
 
-# @app.route("/portfolio_site")
-# def page():
-#     return render_template()
+@app.route("/portfolio_site")
+def portfoliosite_page():
+    return render_template("portfoliosite.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
