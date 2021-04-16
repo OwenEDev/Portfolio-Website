@@ -15,6 +15,10 @@ p {
     text-align: center;
 }
 
+.appDesc {
+    font-size: 23px;
+}
+
 .container {
     padding: 20px;
     width: 1100px;
@@ -24,28 +28,17 @@ p {
     margin-top: 75px;
 }
 
-.block_1 {
-    border: 3px solid #FF5E5B;
-    background-color: #FF5E5B;
-    width: 300px;
-    height: 500px;
-    margin-top: 100px;
-    float: left;
-    border-radius: 50px;
-}
-
-.block_1:hover {
-    transform: scale(1.01);
-}
 
 .block_2 {
+    display: block;
     border: 3px solid #FF5E5B;
     background-color: #FF5E5B;
     width: 765px;
     height: 500px;
     margin-top: 100px;
     margin-left: 20px;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50px;
 }
 
@@ -70,6 +63,19 @@ button {
     width: 140px;
     height: 50px;
     margin: auto;
+}
+
+.gitButton {
+    background-color: #FFFFEA;
+    color: #FF5E5B;
+    padding: 14px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: auto;
+    margin-left: 290px;
+    
 }
 
 button:hover {

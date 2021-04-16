@@ -15,6 +15,9 @@ p {
     text-align: center;
 }
 
+.appdesc {
+    font-size: 23px;
+}
 .container {
     padding: 20px;
     width: 1100px;
@@ -31,7 +34,9 @@ p {
     height: 500px;
     margin-top: 100px;
     float: left;
+    overflow: hidden;
     border-radius: 50px;
+
 }
 
 .block_1:hover {
@@ -42,10 +47,16 @@ img {
     display: block;
     width: 270px;
     height: 470px;
-    border-radius: 10%;
+    border-radius: 50px;
     margin: auto;
     margin-top: 15px;
+    margin-left: 15px;
+}
 
+.block_1 img{
+    opacity: 0;
+    animation: imgSlide 15s infinite;
+    position: absolute;
 }
 
 .block_2 {
@@ -71,11 +82,22 @@ button {
     cursor: pointer;
     text-align: center;
     border: none;
-    animation: img_fade 1.5s ease-out 1.9s normal both;
     margin: auto;
     margin-top: 50px;
 }
 
+.gitButton {
+    background-color: #FFFFEA;
+    color: #FF5E5B;
+    padding: 14px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: auto;
+    margin-left: 290px;
+    
+}
 .button_div {
     width: 140px;
     height: 50px;
@@ -91,3 +113,10 @@ button:active {
     transform: translateY(4px);
     box-shadow: none;
 }
+
+@keyframes imgSlide {
+    25%{opacity: 1;} 40%{opacity: 0;}
+}
+.block_1 img:nth-child(1){animation-delay: 0s;}
+.block_1 img:nth-child(2){animation-delay: 5s;}
+.block_1 img:nth-child(3){animation-delay: 10s;}
